@@ -1,12 +1,12 @@
-package com.internousdev.prototype1605.action;
+package com.shokura.personalwork.action;
 
 import java.util.Map;
 
 import org.apache.struts2.interceptor.SessionAware;
 
-import com.internousdev.prototype1605.dao.LoginDAO;
-import com.internousdev.prototype1605.dto.LoginDTO;
 import com.opensymphony.xwork2.ActionSupport;
+import com.shokura.personalwork.dao.LoginDAO;
+import com.shokura.personalwork.dto.LoginDTO;
 
 public class LoginAction extends ActionSupport implements SessionAware{
 

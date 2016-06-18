@@ -1,4 +1,4 @@
-package com.internousdev.prototype1605.dto;
+package com.shokura.personalwork.dto;
 
 /**
  * データーベースのデータを一時的に保持するクラス

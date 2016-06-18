@@ -1,4 +1,4 @@
-package com.internousdev.prototype1605.util;
+package com.shokura.personalwork.util;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

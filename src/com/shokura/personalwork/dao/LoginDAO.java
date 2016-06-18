@@ -1,12 +1,12 @@
-package com.internousdev.prototype1605.dao;
+package com.shokura.personalwork.dao;
 
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-import com.internousdev.prototype1605.dto.LoginDTO;
-import com.internousdev.prototype1605.util.DBConnector;
+import com.shokura.personalwork.dto.LoginDTO;
+import com.shokura.personalwork.util.DBConnector;
 
 public class LoginDAO {
 	public LoginDTO select(String name, String password){
