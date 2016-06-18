@@ -2,15 +2,20 @@
 <!DOCTYPE struts PUBLIC
     "-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
     "http://struts.apache.org/dtds/struts-2.3.dtd">
+
 <struts>
-	<constant name="struts.devMode" value="xhtml" />
-	<constant name="struts.custom.i18n.resources" value="com.syokura.personalWork.property.Login"></constant>
-	<package name="com.syokura.personalwork.action" extends="struts-default">
+	<!-- xmlの設定 -->
+	<constant name="struts.ui.theme" value="xhtml" />
+	<constant name="struts.custom.i18n.resources"
+		value="com.internousdev.prototype1605.property.Login,
+		   com.internousdev.prototype1605.property.comment,
+		   com.internousdev.prototype1605.property.Main"></constant>
 
-
-		<action name="LoginAction" class="com.syokura.presonalWork.action.LoginAction"
-			method="execute">
-			<result name="success">login_success.jsp</result>
+	<package name="com.internousdev.prototype1605.action" extends="struts-default">
+		<!-- ログインを押下 -->
+		<action name="LoginAction"
+			class="com.internousdev.prototype1605.action.LoginAction" method="execute">
+			<result name="success">main.jsp</result>
 			<result name="error">login.jsp</result>
 		</action>
 
