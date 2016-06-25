@@ -16,10 +16,9 @@
 	<br>
 	<!-- ユーザー名とパスワードを入力 -->
 	<s:form action="LoginAction">
-		<s:textfield name="name" value=""
-			label="%{getText('login.user')}" />
-		<s:textfield name="password" value=""
-			label="%{getText('login.password')}" />
+		<!--< name＝java側に値を持っていく為の変数 value=テキストフィールド内 label=ラベル />-->
+		<s:textfield name="name" value="" label="%{getText('login.user')}" />
+		<s:textfield name="password" value="" label="%{getText('login.password')}" />
 		<s:submit align="left" value="%{getText('login.signIn')}" />
 	</s:form>
 	<br>

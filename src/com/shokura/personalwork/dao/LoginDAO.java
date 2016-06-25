@@ -19,6 +19,9 @@ public class LoginDAO {
 			PreparedStatement ps = con.prepareStatement(sql);
 			ps.setString(1, name);
 			ps.setString(2, password);
+			System.out.println(name);
+			System.out.println(password);
+
 
 			ResultSet rs = ps.executeQuery();
 
